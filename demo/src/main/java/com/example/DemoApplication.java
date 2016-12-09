@@ -26,13 +26,7 @@ public class DemoApplication {
 		return new CommandLineRunner() {
 			@Override
 			public void run(String... arg0) throws Exception {
-				String[] names = { "Howard", "Leonard", "Raj", "Sheldon" };
-
-				// Intentional bug
-				String neverUsed = "";
-
-				// Other bug
-				Integer a = 1;
+				String[] names = { "Howard", "Leonard", "Raj", "Sheldon" }; 
 
 				Arrays.stream(names).forEach(name -> userRepository.save(new User(name)));
 
