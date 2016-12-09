@@ -31,6 +31,9 @@ public class DemoApplication {
 				// Intentional bug
 				String neverUsed = "";
 
+				// Other bug
+				Integer a = 1;
+
 				Arrays.stream(names).forEach(name -> userRepository.save(new User(name)));
 
 				userRepository.findAll().stream().forEach(user -> System.out.println(user));
