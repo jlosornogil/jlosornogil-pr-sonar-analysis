@@ -1,0 +1,6 @@
+server:
+  port: 8010
+  
+management:
+  context-path: /admin
+  port: 9000
