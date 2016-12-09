@@ -28,6 +28,9 @@ public class DemoApplication {
 			public void run(String... arg0) throws Exception {
 				String[] names = { "Howard", "Leonard", "Raj", "Sheldon" };
 
+				// Intentional bug
+				String neverUsed = "";
+
 				Arrays.stream(names).forEach(name -> userRepository.save(new User(name)));
 
 				userRepository.findAll().stream().forEach(user -> System.out.println(user));
