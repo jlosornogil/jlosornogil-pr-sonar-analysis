@@ -32,6 +32,9 @@ public class DemoApplication {
 
 				userRepository.findAll().stream().forEach(user -> System.out.println(user));
 
+				// Intentional bug
+				String str = "";
+
 				System.out.println(userRepository.findAllByName("Raj"));
 			}
 		};
